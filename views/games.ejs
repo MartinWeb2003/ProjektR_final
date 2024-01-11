@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/games.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="games-container">
+        <h1 class="games-title">Game selection</h1>
+        <div class="games-selection">
+
+                <div class="games-game">
+                    <div class="games-game-img1"></div>
+                    <div class="game-info">
+                        <h3>Game 1: Typing Speed</h3>
+                        <p>Test and practice your typings speed</p>
+                        <a href="/typingspeed" class="play-game">Play</a>
+                    </div>
+                </div>
+
+            <div class="games-game">
+                <div class="games-game-img2"></div>
+                <div class="game-info">
+                    <h3>Game 2: Tic Tac Toe</h3>
+                    <p>A simple game of tic tac toe against a computer</p>
+                    <a href="/tictactoe" class="play-game">Play</a>
+            </div>
+            </div><div class="games-game">
+                <div class="games-game-img3"></div>
+                <div class="game-info">
+                    <h3>Game 3: Rock Paper Scissors</h3>
+                    <p>No brain games work here, because you're playing against a PC.</p>
+                    <a href="/rps" class="play-game">Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

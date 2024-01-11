@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="big-element">
+      <h1>Your Main Dashboard</h1>
+      <p>Write down your daily tasks, notes, or just play games.</p>
+      <div class="arrow-down"><a href="#features-area"><i class='bx bx-down-arrow-alt'></i></a></div>
+    </div>
+    <div class="features-area" id="features-area">
+      <div class="feature-container">
+        <div class="img img1"></div>
+        <a href="#n2">
+          <div class="feature-content">
+            <h2 >WRITE DOWN YOUR TASKS</h2>
+            <p>Have all your tasks written down in one place.</p>
+          </div>
+        </a>
+      </div>
+      <div class="feature-container" id="n2">
+        <div class="img img2"></div>
+        <a href="#n3">
+          <div class="feature-content">
+            <h2 >TAKE DOWN YOUR NOTES</h2>
+            <p>Write your thoughts down so you don't have to think about them.</p>
+          </div>
+        </a>
+      </div>
+      <div class="feature-container" id="n3">
+        <div class="img img3"></div>
+        <a href="#">
+          <div class="feature-content">
+            <h2 >HAVE SOME FUN WITH GAMES</h2>
+            <p>Wind down with a simple game to kill some time.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

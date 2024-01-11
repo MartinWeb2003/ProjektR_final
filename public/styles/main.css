@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212529;
+}
+
+.big-element{
+    width: 100%;
+    height: 110vh;
+    background-color: #212529;
+    background-image: url("/images/people.jpg");
+    background-blend-mode:multiply;
+    background-position: center;
+    color: #ffffff;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.arrow-down{
+    font-size: 2rem;
+    border: 4px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-down a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.arrow-down:hover{
+    animation: moveAndFade 1s;
+}
+
+.feature-container{
+    width: 100%;
+    padding: 5px;
+    height: 60vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 20px solid #212529;
+}
+
+.feature-container a{
+    flex: 3;
+    text-decoration: none;
+    color: #212529;
+}
+
+.feature-container .img{
+    height: 55vh;
+    width: 55vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all 0.2s;
+    flex: 2;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+
+.img1{
+    background-image: url("/images/todo.jpg");
+    background-size: 120%;
+}
+
+.img1:hover{
+    background-size: 130%;
+}
+
+.img2{
+    background-image: url("/images/notes.jpg");
+    background-size: 160%;
+}
+.img2:hover{
+    background-size: 170%;
+}
+.img3{
+    background-image: url("/images/game.jpg");
+    background-size: 140%;
+}
+.img3:hover{
+    background-size: 150%;
+}
+
+.feature-container .img:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 56vh;
+    width: 56vh;
+    filter: brightness(0.9);
+}
+
+.feature-content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    flex: 3;
+}
+
+.feature-content:hover h2{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #212529;
+}
+
+
+.feature-content:hover p{
+    margin-top: 15px;
+}
+.feature-content h2{
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.feature-content p{
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.features-area{
+    width: 100%;
+    background-color: #212529;
+}
+
+
+@media(max-width:1045px){
+    .img{
+        display: none;
+    }
+    .feature-container{
+        width: 80%;
+    }
+    .features-area{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .feature-content{
+        padding: 10px;
+    }
+}
+
+@keyframes moveAndFade {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(4px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

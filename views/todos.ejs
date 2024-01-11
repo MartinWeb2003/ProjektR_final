@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/todos.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="todos-main">
+        <h1>To-do's</h1>
+        <form id="todos-form">
+            <input type="text" class="todos-input" id="todos-input" placeholder="Enter task..." autocomplete="off">
+            <ul class="todos" id="todos">
+            </ul>
+        </form>
+        <p>-Enter task <br>-Left click to mark finished <br>-Right click to delete</p>
+    </div>
+    <script src="script/todos.js
+    "></script>
+</body>
+</html>

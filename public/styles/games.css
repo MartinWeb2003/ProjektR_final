@@ -1,0 +1,181 @@
+
+
+.games-title{
+    font-size: 5rem;
+    margin-top: 30px;
+    color: #ffffff;
+    text-shadow: 0px 0px 25px rgba(33, 37, 41, 1);
+}
+
+.games-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#ffffff;
+    background-image: url('/images/back2.jpg');
+    background-blend-mode:multiply;
+    background-size: auto 80%;
+    animation: slidein 50s infinite;
+}
+
+.games-container a{
+    text-decoration: none;
+    color: #212529;
+}
+
+h1{
+    text-align: center;
+}
+
+.games-selection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-selection a{
+    width: 100%;
+}
+
+.games-game{
+    width:100%;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    color: #ffffff;
+    background-image: linear-gradient(
+  45deg,
+  hsl(210deg 11% 15%) 0%,
+  hsl(210deg 12% 13%) 12%,
+  hsl(210deg 13% 12%) 25%,
+  hsl(210deg 14% 11%) 39%,
+  hsl(210deg 16% 9%) 55%,
+  hsl(209deg 20% 8%) 74%,
+  hsl(208deg 29% 7%) 88%,
+  hsl(208deg 49% 5%) 94%,
+  hsl(210deg 97% 3%) 97%,
+  hsl(0deg 0% 0%) 100%
+);
+}
+
+.games-game:hover{
+    transform: scale(1.02);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.games-game h3{
+    font-size: 1.5rem;
+}
+.games-game-img1{
+    height: 90%;
+    width: 250px;
+    margin-left: 20px;
+    background-image: url("/images/typingspeed.png");
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+
+}
+.game-info{
+    text-align: center;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.game-info a{
+    color: #ffffff;
+}
+.game-info h3{
+    font-size: 2.6rem;
+    margin: 5px;
+}
+.games-game-img2{
+    height: 90%;
+    width: 250px;
+    margin-left: 20px;
+    background-image: url("/images/tictactoe.jpg");
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.games-game-img3{
+    height: 90%;
+    width: 250px;
+    margin-left: 20px;
+    background-image: url("/images/rps2.png");
+    filter: invert(1);
+    background-size: auto 230%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.play-game{
+    background-color: #212529;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    transition: all 0.2s;
+    max-width:120px;
+}
+
+.play-game:hover{
+    padding: 10px 40px;
+    text-shadow: 0px 0px 25px rgba(33, 37, 41, 1);
+    background-color: black;
+    max-width:140px;
+}
+
+
+@media(max-width:700px){
+    .games-game{
+        flex-direction: column;
+    }
+    .games-game-img1{
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .games-game-img2{
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .games-game-img3{
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .game-info h3{
+        display: none;
+    }
+    .game-info p{
+        display: none;
+    }
+    .play-game{
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+}
